@@ -32,6 +32,7 @@ const login = (req, res, next) => {
                 );
                 return res.status(200).json({
                     message:'Auth successful',
+                    id_user:user._id,
                     token:token
                 });
             }
