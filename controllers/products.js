@@ -24,7 +24,6 @@ const createProduct = (req, res, next) => {
     }).catch(err => console.log(err));
 
     res.status(200).json({
-        message:'Handling POST requests to /products',
         createdProduct:product
     });
 }
