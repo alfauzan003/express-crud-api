@@ -6,8 +6,36 @@ API ini merupakan API untuk aplikasi toko, dimana pengguna dapat mengelola produ
 API ini menggunakan mongoDB untuk menyimpan data serta memanfaatkan JWT untuk autentikasi.
 
 Project Pattern yang digunakan adalah MVC yakni dengan memisahkan komponen Model, View, dan Controller. Project pattern ini dipilih karena sangat memudahkan dalam pengelolaan dan pengorganisasian kode. Dengan memisahkan setiap bagian dengan perannya masing-masing, hal ini akan membuat kita dengan mudah menambahkan atau mengubah komponen sesuai yang dibutuhkan tanpa harus merusak keseluruhan aplikasi.
-# 📁 Collection: Products 
 
+## Endpoints
+### Endpoint Pengguna
+`POST /user/login` : Digunakan untuk proses login pengguna.
+
+`POST /user/signup` : Digunakan untuk proses pendaftaran pengguna baru.
+
+`DELETE /user/:userId` : Digunakan untuk menghapus pengguna berdasarkan ID pengguna setelah otentikasi.
+
+### Endpoint Produk
+`GET /products` : Digunakan untuk mengambil daftar semua produk.
+
+`GET /products/` :productId: Digunakan untuk mengambil detail produk berdasarkan ID produk.
+
+`POST /products` : Digunakan untuk membuat produk baru setelah otentikasi.
+
+`PATCH /products/` :productId: Digunakan untuk memperbarui produk berdasarkan ID produk setelah otentikasi.
+
+`DELETE /products/:productId` : Digunakan untuk menghapus produk berdasarkan ID produk setelah otentikasi.
+
+### Endpoint Pesanan
+`GET /orders` : Digunakan untuk mengambil daftar semua pesanan setelah otentikasi.
+
+`POST /orders` : Digunakan untuk membuat pesanan baru setelah otentikasi.
+
+`GET /orders/:orderId` : Digunakan untuk mengambil detail pesanan berdasarkan ID pesanan setelah otentikasi.
+
+`DELETE /orders/:orderId` : Digunakan untuk menghapus pesanan berdasarkan ID pesanan setelah otentikasi.
+
+# 📁 Request Example
 
 ## End-point: All Products
 Digunakan untuk menampilkan daftar seluruh produk yang tersedia
