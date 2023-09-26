@@ -18,7 +18,7 @@ Project Pattern yang digunakan adalah MVC yakni dengan memisahkan komponen Model
 ### Endpoint Produk
 `GET /products` : Digunakan untuk mengambil daftar semua produk.
 
-`GET /products/` :productId: Digunakan untuk mengambil detail produk berdasarkan ID produk.
+`GET /products/:productId` :productId: Digunakan untuk mengambil detail produk berdasarkan ID produk.
 
 `POST /products` : Digunakan untuk membuat produk baru setelah otentikasi.
 
